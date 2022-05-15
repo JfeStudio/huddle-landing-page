@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+*/
+
+/* font google */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@700&display=swap");
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+.borders {
+  @apply border border-slate-800;
+}
+
+/* navscrolling */
+
+.header-fixed {
+  @apply bg-transparent py-3;
+  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+  box-shadow: 0 1px 10px rgba(0 0 0 / 0.1);
+}
+
+/* custom scrolbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(0 0 0 / 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(125deg, hsl(192, 100%, 9%), #333);
+  border-radius: 10px;
+}
